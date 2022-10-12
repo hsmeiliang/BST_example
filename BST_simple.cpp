@@ -21,7 +21,7 @@ BSTNode* Insert(BSTNode* node, int value) {
   if (value < node->data) {
     node->left = Insert(node->left, value);
   } else if (value > node->data) {
-   -lstdc++ node->right = Insert(node->right, value);
+   node->right = Insert(node->right, value);
   }
 
   return node;
